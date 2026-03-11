@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description:
     "Transform your space with Milani Interior. Premium interior design and architecture solutions that blend elegance, quality, and functionality.",
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/images/favicon.png",
+    apple: "/images/favicon.png",
   },
 };
 

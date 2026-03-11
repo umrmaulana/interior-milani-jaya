@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center gap-2">
               <img
-                src="/logo.png"
+                src="/images/logo.png"
                 alt="Milani Interior"
                 className="h-12 object-contain"
               />

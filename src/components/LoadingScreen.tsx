@@ -55,7 +55,7 @@ export default function LoadingScreen({
             className="mb-6"
           >
             <img
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Milani Interior"
               className="h-20 object-contain"
             />

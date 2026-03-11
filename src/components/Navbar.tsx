@@ -28,7 +28,9 @@ export default function Navbar() {
     } else {
       document.body.style.overflow = "";
     }
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [mobileOpen]);
 
   const scrollTo = (href: string) => {
@@ -60,7 +62,7 @@ export default function Navbar() {
             className="flex items-center gap-2.5 shrink-0"
           >
             <img
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Milani Interior"
               className={`object-contain transition-all duration-500 ${
                 scrolled ? "h-8" : "h-10"
@@ -69,15 +71,15 @@ export default function Navbar() {
           </motion.a>
 
           {/* Desktop Menu */}
-          <div className={`hidden md:flex items-center ${scrolled ? "gap-0" : "gap-1"}`}>
+          <div
+            className={`hidden md:flex items-center ${scrolled ? "gap-0" : "gap-1"}`}
+          >
             {navLinks.map((link) => (
               <button
                 key={link.name}
                 onClick={() => scrollTo(link.href)}
                 className={`relative text-white/60 hover:text-[#C9A96E] transition-all duration-300 uppercase tracking-wider ${
-                  scrolled
-                    ? "text-[11px] px-3 py-1.5"
-                    : "text-xs px-4 py-2"
+                  scrolled ? "text-[11px] px-3 py-1.5" : "text-xs px-4 py-2"
                 }`}
               >
                 {link.name}
@@ -90,9 +92,7 @@ export default function Navbar() {
             <button
               onClick={() => scrollTo("#contact")}
               className={`rounded-full bg-gradient-to-r from-[#C9A96E] to-[#8B6543] text-black font-semibold tracking-wider hover:shadow-[0_0_20px_rgba(201,169,110,0.3)] transition-all duration-300 ${
-                scrolled
-                  ? "text-[10px] px-4 py-1.5"
-                  : "text-xs px-5 py-2"
+                scrolled ? "text-[10px] px-4 py-1.5" : "text-xs px-5 py-2"
               }`}
             >
               Contact
