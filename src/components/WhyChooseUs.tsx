@@ -79,18 +79,19 @@ function FeatureCard({
   return (
     <motion.div
       style={{ opacity: cardOpacity, y: cardY, scale: cardScale }}
-      whileHover={{ y: -8, transition: { duration: 0.3 } }}
-      className="group p-8 rounded-3xl glass-light border border-gold-400/10 hover:border-gold-400/30 hover:shadow-xl hover:shadow-gold-400/5 transition-[border,box-shadow] duration-500 will-change-transform"
+      className="will-change-transform"
     >
-      <div className="w-14 h-14 rounded-2xl bg-dark-200 border border-gold-400/10 flex items-center justify-center mb-6 group-hover:bg-gold-400/20 group-hover:border-gold-400/30 transition-all duration-500">
-        <feature.icon className="w-6 h-6 text-gold-400 transition-colors duration-500" />
+      <div className="group p-8 rounded-3xl glass-light border border-gold-400/10 hover:border-gold-400/30 hover:shadow-xl hover:shadow-gold-400/5 transition-all duration-500">
+        <div className="w-14 h-14 rounded-2xl bg-dark-200 border border-gold-400/10 flex items-center justify-center mb-6 group-hover:bg-gold-400/20 group-hover:border-gold-400/30 transition-all duration-500">
+          <feature.icon className="w-6 h-6 text-gold-400 transition-colors duration-500" />
+        </div>
+        <h3 className="font-heading text-xl font-bold text-cream-100 mb-3">
+          {feature.title}
+        </h3>
+        <p className="text-cream-200/60 leading-relaxed text-sm">
+          {feature.description}
+        </p>
       </div>
-      <h3 className="font-heading text-xl font-bold text-cream-100 mb-3">
-        {feature.title}
-      </h3>
-      <p className="text-cream-200/60 leading-relaxed text-sm">
-        {feature.description}
-      </p>
     </motion.div>
   );
 }
