@@ -846,6 +846,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-20 {
+  height: 5rem;
+}
 .max-h-\[540px\] {
   max-height: 540px;
 }
@@ -1254,6 +1257,9 @@ video {
 }
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+.object-contain {
+  object-fit: contain;
 }
 .object-cover {
   object-fit: cover;

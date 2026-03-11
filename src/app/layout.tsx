@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "Milani Interior | Luxury Interior Design & Architecture",
   description:
     "Transform your space with Milani Interior. Premium interior design and architecture solutions that blend elegance, quality, and functionality.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

@@ -22,19 +22,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-400/70 flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-lg">
-                  M
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading text-xl font-bold text-cream-100 leading-tight">
-                  Milani
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.3em] text-gold-400/60 -mt-0.5">
-                  Interior
-                </span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="Milani Interior"
+                className="h-12 object-contain"
+              />
             </div>
 
             <p className="text-cream-200/40 leading-relaxed max-w-sm text-sm">

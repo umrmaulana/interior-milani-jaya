@@ -59,19 +59,13 @@ export default function Navbar() {
             whileHover={{ scale: 1.03 }}
             className="flex items-center gap-2.5 shrink-0"
           >
-            <div
-              className={`rounded-lg bg-gradient-to-br from-[#C9A96E] to-[#6F4E37] flex items-center justify-center transition-all duration-500 ${
-                scrolled ? "w-8 h-8" : "w-10 h-10"
+            <img
+              src="/logo.png"
+              alt="Milani Interior"
+              className={`object-contain transition-all duration-500 ${
+                scrolled ? "h-8" : "h-10"
               }`}
-            >
-              <span className="text-black font-bold text-sm">M</span>
-            </div>
-            <div className={`flex flex-col leading-tight transition-all duration-500 ${scrolled ? "hidden lg:flex" : "flex"}`}>
-              <span className="text-white font-semibold text-sm">Milani</span>
-              <span className="text-[9px] tracking-[0.35em] text-[#C9A96E] uppercase">
-                Interior
-              </span>
-            </div>
+            />
           </motion.a>
 
           {/* Desktop Menu */}

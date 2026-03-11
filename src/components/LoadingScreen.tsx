@@ -47,16 +47,18 @@ export default function LoadingScreen({
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="relative z-10 flex flex-col items-center"
         >
-          {/* M Logo */}
+          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-400 to-brown-600 flex items-center justify-center mb-6 gold-glow"
+            className="mb-6"
           >
-            <span className="text-dark-300 font-heading font-bold text-3xl">
-              M
-            </span>
+            <img
+              src="/logo.png"
+              alt="Milani Interior"
+              className="h-20 object-contain"
+            />
           </motion.div>
 
           {/* Brand name */}
@@ -66,11 +68,8 @@ export default function LoadingScreen({
             transition={{ delay: 0.4, duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h1 className="font-heading text-3xl font-bold text-cream-100 tracking-wide">
-              Milani
-            </h1>
             <p className="text-[11px] uppercase tracking-[0.5em] text-gold-400/70 mt-1">
-              Interior Design
+              Beyond Luxury
             </p>
           </motion.div>
 
